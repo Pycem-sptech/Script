@@ -16,7 +16,7 @@ if [ $? == 0 ];
 
             if [ \"$resp2\" == \"s\" ];
                 then
-                    cd pycemExtractor/
+                    cd pycemExtractor/target/
                     echo "Inicializando o PycemExtractor"
                     java -jar pycemExtractor.jar
             fi
@@ -44,7 +44,7 @@ if [ $? == 0 ];
 
                 if [ \"$resp4\" == \"s\" ];
                     then
-                        cd pycemExtractor/
+                        cd pycemExtractor/target/
                         echo "Inicializando o PycemExtractor"
                         java -jar pycemExtractor.jar
                 fi
