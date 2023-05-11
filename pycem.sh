@@ -18,7 +18,7 @@ if [ $? == 0 ];
                 then
                     cd pycemExtractor/target/
                     echo "Inicializando o PycemExtractor"
-                    java -jar pycemExtractor.jar
+                    java -jar pycem.jar
             fi
         fi
     else
@@ -46,7 +46,7 @@ if [ $? == 0 ];
                     then
                         cd pycemExtractor/target/
                         echo "Inicializando o PycemExtractor"
-                        java -jar pycemExtractor.jar
+                        java -jar pycem.jar
                 fi
             fi
         fi
