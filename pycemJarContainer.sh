@@ -5,7 +5,7 @@ NC='\033[0m'
 VERSAO=11
 
 echo "$(tput setaf 10)[Bot Pycem]:$(tput setaf 7) Olá, seja bem-vindo à Pycem. Serei seu guia para instalar nossa aplicação." 
-echo "$(tput setaf 10)[Bot Pycem]:$(tput setaf 7) Verificando se possui o Java instalado."
+echo "$(tput setaf 10)[Bot Pycem]:$(tput setaf 7) Verificando se você possui o Java instalado."
 sleep 2
 
 java -version
@@ -13,10 +13,10 @@ if [ $? -eq 0 ]; then
     echo "$(tput setaf 10)[Bot Pycem]:$(tput setaf 7) Você já possui o Java instalado."
 else
     echo "$(tput setaf 10)[Bot Pycem]:$(tput setaf 7) Não encontramos nenhuma versão do Java instalada, mas podemos instalar agora!"
-    echo "$(tput setaf 10)[Bot Pycem]:$(tput setaf 7) Confirme para mim se deseja instalar o Java (s/n)."
+    echo "$(tput setaf 10)[Bot Pycem]:$(tput setaf 7) Confirme se deseja instalar o Java (s/n)."
     read -r inst
     if [ "$inst" == "s" ]; then
-        echo "$(tput setaf 10)[Bot Pycem]:$(tput setaf 7) Ok, estamos instalando o Java."
+        echo "$(tput setaf 10)[Bot Pycem]:$(tput setaf 7) Ok, instalando o Java."
         sudo add-apt-repository ppa:webupd8team/java -y
         sleep 5
         sudo apt update -y
@@ -29,7 +29,7 @@ else
             sleep 10
             clear
             echo "$(tput setaf 10)[Bot Pycem]:$(tput setaf 7) Java instalado com sucesso."
-            echo "$(tput setaf 10)[Bot Pycem]:$(tput setaf 7) Estaremos atualizando os pacotes."
+            echo "$(tput setaf 10)[Bot Pycem]:$(tput setaf 7) Atualizando os pacotes..."
             sudo apt update && sudo apt upgrade -y
             sleep 5
         fi
@@ -95,7 +95,7 @@ else
 fi
 
 # TERCEIRA PARTE
-echo "$(tput setaf 10)[Bot Pycem]:$(tput setaf 7) Vamos verificar se nossa aplicação já está baixada."
+echo "$(tput setaf 10)[Bot Pycem]:$(tput setaf 7) Vamos verificar se nossa aplicação já está instalada."
 ls
 sleep 2
 
@@ -105,7 +105,7 @@ else
     echo "$(tput setaf 10)[Bot Pycem]:$(tput setaf 7) Não encontramos nossa aplicação. Deseja baixar nossa aplicação? (s/n)"
     read -r inst
     if [ "$inst" == "s" ]; then
-        echo "$(tput setaf 10)[Bot Pycem]:$(tput setaf 7) Baixando o .jar da nossa aplicação."
+        echo "$(tput setaf 10)[Bot Pycem]:$(tput setaf 7) Baixando nossa aplicação..."
         git clone https://github.com/Pycem-sptech/Aplicacao_Java.git
         clear
     else
@@ -114,7 +114,7 @@ else
     fi
 fi
 
-echo "$(tput setaf 10)[Bot Pycem]:$(tput setaf 7) Iniciando nossa aplicação. Bem-vindo à Pycem²"
+echo "$(tput setaf 10)[Bot Pycem]:$(tput setaf 7) Iniciando o Pycem²..."
 
 # sleep 3
 cd Aplicacao_Java
@@ -122,4 +122,3 @@ sleep 2
 # sudo chmod +x pycemJar-1.0-SNAPSHOT-jar-with-dependencies.jar
 # sleep 2
 java -jar pycemJar-1.0-SNAPSHOT-jar-with-dependencies.jar
-
