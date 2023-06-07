@@ -121,5 +121,5 @@ cd Aplicacao_Java
 sleep 2
 # sudo chmod +x pycemJar-1.0-SNAPSHOT-jar-with-dependencies.jar
 # sleep 2
-java -jar pycemExtractor2.jar
+java -jar pycemrJar2.jar
 
