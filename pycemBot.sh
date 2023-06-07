@@ -104,7 +104,6 @@ echo "$(tput setaf 10)[Bot Pycem]:$(tput setaf 7) Vamos verificar se nossa aplic
         echo "$(tput setaf 10)[Bot Pycem]:$(tput setaf 7) Você escolheu não baixar nossa aplicação. Até a próxima!"	
         exit 0
     fi
-fi
 
 echo "$(tput setaf 10)[Bot Pycem]:$(tput setaf 7) Iniciando nossa aplicação. Bem-vindo à Pycem²"
 
