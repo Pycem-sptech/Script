@@ -95,17 +95,9 @@ else
 fi
 
 # TERCEIRA PARTE
-echo "$(tput setaf 10)[Bot Pycem]:$(tput setaf 7) Vamos verificar se nossa aplicação já está baixada."
-ls
-sleep 2
-
-if [ -f "$Aplicacao_Java" ]; then
-    echo "$(tput setaf 10)[Bot Pycem]:$(tput setaf 7) A nossa aplicação já existe."
-else
-    echo "$(tput setaf 10)[Bot Pycem]:$(tput setaf 7) Não encontramos nossa aplicação. Deseja baixar nossa aplicação? (s/n)"
+echo "$(tput setaf 10)[Bot Pycem]:$(tput setaf 7) Vamos verificar se nossa aplicação já está baixada caso não esteja, podemos baixa? (s/n)"
     read -r inst
     if [ "$inst" == "s" ]; then
-        echo "$(tput setaf 10)[Bot Pycem]:$(tput setaf 7) Baixando o .jar da nossa aplicação."
         git clone https://github.com/Pycem-sptech/Aplicacao_Java.git
         clear
     else
